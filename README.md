@@ -136,17 +136,3 @@ Após isso ele abrirá e executará os testes que estão na pasta `cypress/e2e`
 ## Deploy
 
 O site foi deployado usando **Vercel**. Você pode acessá-lo [aqui](https://repo-idol.vercel.app/).
-
-## ❗Débito técnico
-
-- SWR: Apresentou alguns problemas com Suspense do React, existem algumas anotações do problema na comunidade (links abaixo). Foi contornado com resolução de **Return First** em loadings: https://www.meje.dev/blog/suspense-in-nextjs
-  https://github.com/vercel/next.js/pull/45565
-  https://swr.vercel.app/docs/with-nextjs#pre-rendering-with-default-data
-  É necessário verificar solução para melhor aproveitamento do SWR com seus Fallback nativo
-
-- Testes E2E: Implementar mais testes para cobrir cenários
-  de interação com exclusão de repositorios favoritos e de favoritar novamente.
-
-- Responsive: Fazer ajustes para que o layout fique responsivo em outros dispositivos.
-
-- SSG para listagem de Repositorios: Implementar um cache para listagem de repositorios. **PS**: _Não fora utilizado por conta de aproveitar o cacheamento do SWR para a busca, mas SSG tornaria um pouco melhor a experiência_
